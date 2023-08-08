@@ -15,7 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import QuizIcon from '@mui/icons-material/Quiz';
-import AddIcon from '@mui/icons-material/Add';
+import DashboardIcon from '@mui/icons-material/Dashboard';
 import AllQuiz from '../Components/AllQuiz';
 import { Button } from '@mui/material';
 const drawerWidth = 240;
@@ -36,11 +36,11 @@ function Sidebar(props) {
       <Toolbar />
       
       <List>
-        {[ 'Add Quiz','All Quiz'].map((text, index) => (
+        {[ 'Dashboard','All Quiz'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <AddIcon  /> : <QuizIcon/>}
+                {index % 2 === 0 ? <DashboardIcon  /> : <QuizIcon/>}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>

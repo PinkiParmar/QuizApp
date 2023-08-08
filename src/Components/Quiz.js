@@ -49,7 +49,7 @@ export default function Quiz(){
         <FormGroup>
   {/* <FormControlLabel control={<Checkbox defaultChecked />} label="Remember me" /> */}
 </FormGroup>
-<Button type='submit' color='success' variant='contained' style={btnStyle} ><Link href='/result'>Submit</Link></Button>
+<Link href='/result'><Button  color='success' variant='contained' style={btnStyle} >Submit</Button></Link>
 
     
  </Grid>

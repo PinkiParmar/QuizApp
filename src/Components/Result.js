@@ -27,8 +27,9 @@ export default function Result(){
             <p >Thank You! for submit exam.</p><br/>
             <p >Your response has been submitted successfully. </p>
 
-        <button value='submit' className='next-button3'><Link href='/veiw_result' style={{textDecoration:'none'}}>View Score</Link></button>
-<p><Link to='/'>Submit another response.</Link></p>
+        <Link href='/veiw_result'><Button  color='success' variant='contained' style={btnStyle} >View Score</Button></Link>
+
+<p><Link href='/'>Submit another response.</Link></p>
             </div>
    
    

@@ -11,6 +11,12 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
 
 
 export default function ExamDetail(){
@@ -18,7 +24,7 @@ export default function ExamDetail(){
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-    const paperStyle={padding:20,height:'45vh',width:250,margin:'20px auto' }
+    const paperStyle={padding:20,height:'45vh',width:400,margin:'20px auto' }
 
     const btnStyle={margin:'8px 0'}
     const addStyle={height:'100',width:'100'}
@@ -36,7 +42,43 @@ export default function ExamDetail(){
         <h4>Total no. of participants:</h4>
         <h4>Average marks:</h4>
         <h4>Difficulti Level:</h4>
-<Button type='cancel' color='warning' variant='contained' style={btnStyle} onClick={handleClose} >Cancel</Button>
+<TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell><h4>Total No. of Participants</h4></TableCell>
+            <TableCell align="right"><h4>Average Marks</h4></TableCell>
+            <TableCell align="right"><h4>Difficulti Level</h4></TableCell>
+            
+          </TableRow>
+          <TableRow>
+            <TableCell>2000</TableCell>
+            <TableCell align="right">8</TableCell>
+            <TableCell align="right">easy</TableCell>
+            
+          </TableRow>
+          
+        </TableHead>
+        {/* <TableBody>
+          {rows.map((row) => (
+            <TableRow
+              key={row.name}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody> */}
+      </Table>
+    </TableContainer>
+    <Button  color='primary' variant='contained' style={btnStyle} onClick={handleClose}  >Ok</Button>
+
     </Paper>
  </form>
       </Modal>
@@ -73,6 +115,14 @@ export default function ExamDetail(){
         
         
         </Grid>
+        
+        <select>
+        <option  value="">Answer</option>
+        <option  value=""  ><b>A</b></option>
+                              
+        </select>
+                       
+              
         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <div className="container1">
         <Grid>

@@ -27,7 +27,7 @@ export default function App(){
     <Route path="/add_question" element={<AddQuestion/>}></Route>
     <Route path="/result" element={<Result/>}></Route>
     <Route path="/admin_page" element={<AdminPage/>}></Route>
-    <Route path="/sidebar" element={<Sidebar/>}></Route>
+    <Route path="/sidebar" element={<Sidebar componentLoad={AllQuiz}/>}></Route>
     <Route path='/exam_detail' element={<ExamDetail/>}></Route>
     <Route path="/veiw_result" element={<ViewResult/>}></Route>
   </Routes>

@@ -110,7 +110,7 @@ function handleClick(id) {
           </Typography>
           <form >
  
-    <Paper elevation={10} style={paperStyle}>
+   
         <TextField name="Exam Name" label='Quiz Title' placeholder='Quiz Title' variant="filled" fullWidth  required/>
         <TextField name="Exam Date" label='Quiz date' placeholder='Quiz Date' variant="filled" fullWidth  required/>
         <TextField name="No Of Questions" label='No Of Questions' placeholder='No Of Questions' variant="filled" fullWidth  required/>
@@ -119,7 +119,7 @@ function handleClick(id) {
 <Button type='next' color='primary' variant='contained' style={btnStyle} >Next</Button>&nbsp;&nbsp;&nbsp;&nbsp;
 <Button type='cancel' color='error' variant='contained' style={btnStyle} onClick={handleClose} >Cancel</Button>
 
-    </Paper>
+   
  </form>
         </Box>
       </Modal>

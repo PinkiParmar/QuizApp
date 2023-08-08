@@ -52,7 +52,9 @@ export default function ExamDetail(){
         <FormControlLabel value="option4" control={<Radio />} label="None of these."/>
       </RadioGroup>
     </FormControl>
-        
+    <Grid>
+        <p > <h4>Answer:</h4>Hyper text markup language.</p>
+        </Grid>
         
         </Grid>
         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

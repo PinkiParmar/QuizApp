@@ -14,7 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import QuizIcon from '@mui/icons-material/Quiz';
+import DehazeOutlinedIcon from '@mui/icons-material/DehazeOutlined';
 import AddIcon from '@mui/icons-material/Add';
 import AllQuiz from '../Components/AllQuiz';
 import { Button } from '@mui/material';
@@ -41,7 +41,7 @@ function UserPage(props) {
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <QuizIcon /> : <QuizIcon />}
+                {index % 2 === 0 ? <DehazeOutlinedIcon /> : <DehazeOutlinedIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
